@@ -41,3 +41,52 @@ export const Owner = styled.header`
     max-width: 400px;
   }
 `;
+
+export const IssueList = styled.ul`
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px solid #eee;
+  list-style: none;
+
+  li {
+    display: flex;
+    padding: 16px 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+
+    & + li {
+      margin-top: 8px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid #eee;
+    }
+
+    div {
+      flex: 1;
+      margin-left: 16px;
+
+      strong {
+        font-size: 16px;
+
+        a {
+          text-decoration: none;
+          color: #333;
+
+          &:hover {
+            color: #7159c1;
+          }
+        }
+      }
+
+      p {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+`;
